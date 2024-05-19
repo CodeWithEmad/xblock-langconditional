@@ -1,5 +1,5 @@
-Conditional Xblock for language preferences.
-#############################
+Conditional Xblock for language preferences
+###########################################
 
 Testing with Docker
 ********************
@@ -23,7 +23,7 @@ For more information on how to enable translations, visit the
 This cookiecutter template uses `django-statici18n <https://django-statici18n.readthedocs.io/en/latest/>`_
 to provide translations to static javascript using ``gettext``.
 
-The included Makefile contains targets for extracting, compiling and validating translatable strings.
+The included Makefile contains targets for extracting, compiling, and validating translatable strings.
 The general steps to provide multilingual messages for a Python program (or an XBlock) are:
 
 1. Mark translatable strings.
@@ -95,7 +95,7 @@ The format of each entry is as follows::
 For more information see
 `GNU PO file documentation <https://www.gnu.org/software/gettext/manual/html_node/PO-Files.html>`_.
 
-To use translations from transifex use the follow Make target to pull translations::
+To use translations from transifex use the following Make target to pull translations::
 
     $ make pull_translations
 
@@ -118,7 +118,7 @@ The previous command will compile ``.po`` files using
 After compiling the ``.po`` file(s), ``django-statici18n`` is used to create language specific catalogs. See
 ``django-statici18n`` `documentation <https://django-statici18n.readthedocs.io/en/latest/>`_ for more information.
 
-To upload translations to transiflex use the follow Make target::
+To upload translations to transifex use the following Make target::
 
     $ make push_translations
 
